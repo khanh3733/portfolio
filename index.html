@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Duy Khanh | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="particleCanvas"></canvas>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo"><img src="./img/logo.png" alt="Logo"></a>
+            
+            <ul class="nav-links">
+                <li><a href="#home" data-vi="Trang chủ" data-ja="ホーム">Trang chủ</a></li>
+                <li><a href="#about" data-vi="Giới thiệu" data-ja="自己紹介">Giới thiệu</a></li>
+                <li><a href="#skills" data-vi="Kỹ năng" data-ja="スキル">Kỹ năng</a></li>
+                <li><a href="#projects" data-vi="Dự án" data-ja="プロジェクト">Dự án</a></li>
+            </ul>
+
+            <div class="right-group">
+                <a href="#contact" class="btn-cta" data-vi="Liên hệ" data-ja="連絡先">Liên hệ</a>
+                <button id="langToggle" class="btn-cta-JP">JP</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="container">
+            <h1 class="mono-text reveal-up" data-vi="Xin chào, tôi là" data-ja="こんにちは、私は">Xin chào, tôi là</h1>
+            <h2 class="main-name reveal-up">NGUYEN DUY KHANH</h2>
+            <h3 class="reveal-up">
+                <span class="typer" id="typewriter" 
+                      data-vi="Fullstack Developer.,.NET MVC Expert.,Flutter Developer.,N3 Japanese Speaker." 
+                      data-ja="フルスタック開発者。, .NET MVC エキスパート。, Flutter 開発者。, 日本語能力試験 N3。">
+                </span>
+                <span class="cursor">|</span>
+            </h3>
+            <p class="hero-desc reveal-up" 
+               data-vi="Tốt nghiệp Công nghệ Thông tin tại Việt Nam và đang phát triển sự nghiệp tại Okayama, Nhật Bản. Chuyên gia xây dựng hệ thống Web & Mobile với tư duy tối ưu và trách nhiệm cao."
+               data-ja="ベトナムでIT学科を卒業し、現在岡山県でキャリアを築いています。責任感を持ってWeb・モバイルシステムの構築を専門としています。">
+               Tốt nghiệp Công nghệ Thông tin tại Việt Nam và đang phát triển sự nghiệp tại Okayama, Nhật Bản.
+            </p>
+            <div class="hero-btns reveal-up">
+                <a href="#projects" class="btn-primary" data-vi="Xem dự án" data-ja="プロジェクトを見る">Xem dự án</a>
+                <a href="mailto:nguyenduykhanhgaim@gmail.com" class="btn-secondary" data-vi="Liên hệ ngay" data-ja="今すぐ連絡">Liên hệ ngay</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title reveal-up" data-vi="Về Tôi" data-ja="自己紹介">Về Tôi</h2>
+            <div class="about-grid">
+                <div class="about-text reveal-left">
+                    <p data-vi="Tôi có 2 năm kinh nghiệm thực chiến trong việc thiết kế, triển khai và vận hành các hệ thống Web nội bộ (HRM, Welfare) và các sản phẩm thương mại cho khách hàng."
+                       data-ja="私は2年間の実務経験の中で、人事管理システム（HRM）や福祉管理システムなどの社内システムのほか、クライアント向けの商用製品の設計から導入、運用まで一貫して携わってきました。">
+                       Tôi có 2 năm kinh nghiệm thực chiến trong việc thiết kế, triển khai và vận hành các hệ thống Web nội bộ (HRM, Welfare) và các sản phẩm thương mại cho khách hàng.
+                    </p>
+                    <p data-vi="Luôn đặt mục tiêu hiểu rõ nghiệp vụ để đưa ra giải pháp kỹ thuật tối ưu nhất. Hiện tôi đang học tập tại Kurashiki Foreign Language Institute để nâng cao khả năng giao tiếp trong môi trường quốc tế."
+                       data-ja="常に業務内容を深く理解し、最適な技術ソリューションを提案することを目指しています。現在、国際的な環境でのコミュニケーション能力を高めるため、倉敷外語学院で勉強しています。">
+                       Luôn đặt mục tiêu hiểu rõ nghiệp vụ để đưa ra giải pháp kỹ thuật tối ưu nhất. Hiện tôi đang học tập tại Kurashiki Foreign Language Institute để nâng cao khả năng giao tiếp trong môi trường quốc tế.
+                    </p>
+                </div>
+                <div class="about-stats reveal-right">
+                    <div class="stat-item"><span>JLPT</span><strong>N3</strong></div>
+                    <div class="stat-item"><span data-vi="Kinh nghiệm" data-ja="経験">Exp</span><strong>2+ Years</strong></div>
+                    <div class="stat-item"><span data-vi="Ngôn ngữ" data-ja="言語">Lang</span><strong>C# / Dart</strong></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal-up" data-vi="Kỹ năng chuyên môn" data-ja="専門スキル">Kỹ năng chuyên môn</h2>
+            <div class="skills-grid">
+                <div class="skill-card tilt reveal-up">
+                    <div class="skill-icon">#</div>
+                    <h3>Backend (.NET)</h3>
+                    <p data-vi="ASP.NET MVC, Entity Framework, C#, CRUD, Web API."
+                       data-ja="ASP.NET MVC, Entity Framework, C#, CRUD処理, Web API。">
+                       ASP.NET MVC, Entity Framework, C#, CRUD, Web API.
+                    </p>
+                </div>
+                <div class="skill-card tilt reveal-up">
+                    <div class="skill-icon">DB</div>
+                    <h3>SQL Server</h3>
+                    <p data-vi="Thiết kế Database, Tối ưu truy vấn, JOIN, SQL nghiệp vụ phức tạp."
+                       data-ja="データベース設計, クエリ最適化, JOIN, 複雑な業務SQL。">
+                       Thiết kế Database, Tối ưu truy vấn, JOIN, SQL nghiệp vụ phức tạp.
+                    </p>
+                </div>
+                <div class="skill-card tilt reveal-up">
+                    <div class="skill-icon">UI</div>
+                    <h3>Frontend</h3>
+                    <p data-vi="HTML5/CSS3, Bootstrap Grid, JavaScript/jQuery Ajax, Figma to Code."
+                       data-ja="HTML5/CSS3, Bootstrap Grid, JavaScript/jQuery Ajax, Figmaからコーディング。">
+                       HTML5/CSS3, Bootstrap Grid, JavaScript/jQuery Ajax, Figma to Code.
+                    </p>
+                </div>
+                <div class="skill-card tilt reveal-up">
+                    <div class="skill-icon">MB</div>
+                    <h3>Mobile</h3>
+                    <p data-vi="Flutter, Dart, SQLite local storage, OOP Design."
+                       data-ja="Flutter, Dart, SQLiteローカルストレージ, オブジェクト指向設計。">
+                       Flutter, Dart, SQLite local storage, OOP Design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal-up" data-vi="Dự án tiêu biểu" data-ja="主要なプロジェクト">Dự án tiêu biểu</h2>
+            <div class="project-grid">
+                <!-- HRM -->
+                <div class="project-card reveal-up">
+                    <div class="project-img hrm"></div>
+                    <div class="project-info">
+                        <span class="project-type">Web System</span>
+                        <h4 data-vi="HRM System (Quản lý nhân sự)" data-ja="HRM システム (人事管理)">HRM System (Quản lý nhân sự)</h4>
+                        <p data-vi="Hệ thống nội bộ tích hợp chấm công, tính lương và phân loại dự án."
+                           data-ja="勤怠管理、給与計算、プロジェクト分類を統合した社内システム。">
+                           Hệ thống nội bộ tích hợp chấm công, tính lương và phân loại dự án.
+                        </p>
+                        <div class="tags"><span>.NET MVC</span> <span>SQL Server</span></div>
+                    </div>
+                </div>
+                <!-- Flutter -->
+                <div class="project-card reveal-up">
+                    <div class="project-img flutter"></div>
+                    <div class="project-info">
+                        <span class="project-type">Mobile App</span>
+                        <h4 data-vi="Android HRM Offline" data-ja="Android HRM オフライン">Android HRM Offline</h4>
+                        <p data-vi="Ứng dụng Mobile hỗ trợ làm việc offline với SQLite. Custom UI mượt mà."
+                           data-ja="SQLiteを使用したオフライン作業対応のモバイルアプリ。スムーズなカスタムUI。">
+                           Ứng dụng Mobile hỗ trợ làm việc offline với SQLite. Custom UI mượt mà.
+                        </p>
+                        <div class="tags"><span>Flutter</span> <span>Dart</span> <span>SQLite</span></div>
+                    </div>
+                </div>
+                <!-- Ecommerce -->
+                <div class="project-card reveal-up">
+                    <div class="project-img shop"></div>
+                    <div class="project-info">
+                        <span class="project-type">E-Commerce</span>
+                        <h4 data-vi="Fashion Shop Website" data-ja="ファッションショップサイト">Fashion Shop Website</h4>
+                        <p data-vi="Website bán hàng thời trang chuyên nghiệp. Tối ưu trải nghiệm khách hàng."
+                           data-ja="プロフェッショナルなファッション販売サイト。顧客体験を最適化。">
+                           Website bán hàng thời trang chuyên nghiệp. Tối ưu trải nghiệm khách hàng.
+                        </p>
+                        <div class="tags"><span>ASP.NET</span> <span>Ajax</span></div>
+                    </div>
+                </div>
+            </div>
+            <p class="more-projects reveal-up" 
+               data-vi="...và 5 dự án khác (Blog, Food App, Welfare System) đã bàn giao thành công."
+               data-ja="...その他、ブログ、フードアプリ、福祉システムなど5つのプロジェクトを無事に納品。">
+               ...và 5 dự án khác (Blog, Food App, Welfare System) đã bàn giao thành công.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container text-center">
+            <h2 class="section-title reveal-up" data-vi="Liên hệ" data-ja="連絡先">Liên hệ</h2>
+            <div class="contact-info reveal-up">
+                <p data-vi="📍 Okayama-ken, Soja-shi, Ekinan 2-4-1"
+                    data-ja="📍 岡山県総社市駅南2丁目４－１">
+                    📍 Okayama-ken, Soja-shi, Ekinan 2-4-1
+                </p>
+                <p>📞 070-9082-4643</p>
+                <p>✉️ nguyenduykhanhgaim@gmail.com</p>
+            </div>
+            <a href="mailto:nguyenduykhanhgaim@gmail.com" class="btn-primary reveal-up" 
+               data-vi="Gửi tin nhắn cho Khanh" data-ja="慶（カイン）にメッセージを送る">Gửi tin nhắn cho Khanh</a>
+        </div>
+    </section>
+
+    <footer>
+        <p data-vi="&copy; 2026 Phát triển bởi Nguyen Duy Khanh. Sống tại Okayama, Nhật Bản."
+           data-ja="&copy; 2026 開発者：グエン・ズイ・カイン。岡山県在住。">
+           &copy; 2026 Developed by Nguyen Duy Khanh. Live in Okayama, JP.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
